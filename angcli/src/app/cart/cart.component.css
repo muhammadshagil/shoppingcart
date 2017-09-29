@@ -1,0 +1,8 @@
+.rightPanel{float:left;}
+h3{font-size:20px;}
+ul{padding:0;}
+
+.cart-items {
+	 border: 1px solid gray;
+  	box-sizing: border-box;
+}

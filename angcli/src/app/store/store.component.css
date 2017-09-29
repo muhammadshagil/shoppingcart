@@ -1,0 +1,14 @@
+
+
+h3{font-size:20px;}
+
+  .productBox{
+  	border: 1px solid gray;
+  	padding:2 2 2 2;
+  	box-sizing: border-box;
+  }
+@media screen and (max-width: 767px) {
+  .storeBox{
+  	border: 1px solid black;
+  }
+}

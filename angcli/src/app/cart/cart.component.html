@@ -1,0 +1,35 @@
+<!--<div [ngClass]="'rightPanel'">
+  <h3>Cart</h3>
+  <ul *ngFor="let item of cartItems">
+	<li>
+	  <span> {{item.name}} </span> 
+	  <span><button type="button" (click)="removeItemFromCart(item.id)">Remove</button></span>
+	</li>
+  </ul>
+</div>-->
+
+<div class="row">
+    		<div class="col-sm-12">
+    			<h3>Shopping cart</h3>   
+    		</div>
+</div>
+<div class="row cart-items">
+	<div class="col-sm-12" style="height: 200px; overflow: auto;">
+		<div class="row" *ngFor="let item of cartItems">
+			<div class="col-sm-4">
+				<span> {{item.name}} </span> 
+			</div>
+			<div class="col-sm-4">
+				<span> {{item.price}} </span> 
+			</div>
+			<div class="col-sm-4">
+				<span><a class="glyphicon glyphicon-remove" (click)="removeItemFromCart(item.id)">Remove</a></span>
+			</div>
+		</div>
+	</div>
+</div>
+ <div class="row">
+ 	<div class="col-sm-12">
+ 		<h5>Total Amount : {{getTotalAmount()}}</h5> 
+ 	</div>
+</div>
